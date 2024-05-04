@@ -1,0 +1,320 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    background-color: #a6c36f;
+    text-align: center;
+  font-family: '"Comic Sans MS" sans-serif; color: #335145
+}
+
+h1{
+  font-family: "Gerogia", serif;
+}
+h2{
+  font-family: "Gerogia", serif;
+}
+h3{
+  font-family: "Gerogia", serif;
+}
+h4{
+  font-family: "Gerogia", serif;
+}
+h5{
+  font-family: "Gerogia", serif;
+}
+/* General Styles */
+.container {
+  max-width: none;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #1f3624;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #1f3624;
+    margin: 5px;
+}
+
+/* Hero Section Styles */
+
+    /* Hero Section Styles */
+  #hero {
+        position: relative;
+        overflow: hidden;
+    color: #A6C36F
+    }
+
+    .hero-content {
+        position: relative;
+        width: 100%;
+      height: auto;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        filter: brightness(0.5); /* Adjust background image brightness for text readability */
+    }
+
+    .centered-content {
+        position: relative;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .headshot {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .tagline {
+        font-size: 24px;
+        color: #A6C36F;
+        opacity: 0.8; /* Adjust tagline opacity for text readability */
+    }
+
+    /* Mission Section Styles */
+    #mission {
+      padding: 80px 0;
+      padding-bottom: 80px;/* Adjust based on navbar height */
+      width: 100%;
+      height: auto; /* Adjust the height as needed */
+      text-align: center;
+      color: #828C51
+    }
+    .mission-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; /* Added to center the content */
+      position: absolute;
+      top: 47%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+      margin-top: 20px;
+    }
+    .mission-img {
+      margin-bottom: 20px;
+      width: 20px;
+      height: auto; /* Adjust the height as needed */
+    }
+    @media (min-width: 768px) {
+      .mission-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+
+    /* Skills Section Styles */
+    .skills {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .skill {
+      margin-bottom: 20px;
+    }
+    .skill img {
+      width: 100px;
+    }
+    .skill p {
+      margin-top: 10px;
+      text-color: #335145;
+    }
+
+    @media (min-width: 768px) {
+      .skills-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    /* Contact Section Styles */
+    .contact {
+      background-color: #1E352F;
+      color: #A6C36F;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .social-icons img {
+      width: 40px;
+      transition: transform 0.3s;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    @media (min-width: 768px) {
+      .social-icons {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    /* Media Queries */
+    @media only screen and (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+
+        .burger {
+            display: flex;
+        }
+
+        .nav-active .nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 80px;
+            width: 100%;
+            background-color: #1E352F;
+            transition: all 0.5s ease;
+        }
+
+        .nav-active .nav-links li {
+            opacity: 0;
+        }
+
+        .nav-active .nav-links li:nth-child(1) {
+            transition: all 0.5s ease 0.2s;
+        }
+
+        .nav-active .nav-links li:nth-child(2) {
+            transition: all 0.5s ease 0.4s;
+        }
+
+        .nav-active .nav-links li:nth-child(3) {
+            transition: all 0.5s ease 0.6s;
+        }
+
+        .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .line2 {
+            opacity: 0;
+        }
+
+        .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    }
+/* Carousel */
+  .carousel{
+    carousel-control-color:             #335145;
+    carousel-control-width:             15%;
+    carousel-control-opacity:           .5;
+    carousel-control-hover-opacity:     .9;
+    carousel-control-transition-opacity: .15s ease;
+
+    carousel-indicator-width:           30px;
+    carousel-indicator-height:          3px;
+    carousel-indicator-hit-area-height: 10px;
+    carousel-indicator-spacer:          3px;
+    carousel-indicator-opacity:         .5;
+    carousel-indicator-active-bg:       #335145;
+    carousel-indicator-active-opacity:  1;
+    carousel-indicator-transition-opacity: .6s ease;
+
+    carousel-caption-width:             70%;
+    carousel-caption-color:             $#A6C36F;
+    carousel-caption-padding-y:         1.25rem;
+    carousel-caption-spacer:            1.25rem;
+
+    carousel-control-icon-width:        2rem;
+
+    carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+    carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+    carousel-transition-duration:       .6s;
+    carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+  }
+
+/* Footer */
+
+    .main {
+        flex: 1; /* This pushes the footer to the bottom */
+    }
+      /* Footer Styles */
+      footer {
+        background-color: #1E352F;
+        color: #A6C36F;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer-content p {
+        margin: 0;
+        font-size: 16px;
+      }
+
+        margin-top: 95%; /* This keeps the footer at the bottom */
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
